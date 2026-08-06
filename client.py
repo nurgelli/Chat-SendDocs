@@ -1,8 +1,6 @@
 import asyncio
 import websockets
 
-SERVER_URI = "ws://localhost:8000" #! Server comp IP
-
 async def send_message(websocket, username):
 
     try:
@@ -27,6 +25,14 @@ async def receive_messages(websocket):
 
 async def main():
 
+
+    print("Enter server IP (default: localhost): ")
+    server_ip = await asyncio.to_thread(input)
+    if not server_ip:
+        server_ip = "localhost"
+    
+    SERVER_URI = f"ws://{server_ip}:8000"
+    
     print("Enter name: ")
     username = await asyncio.to_thread(input)
     if not username:
