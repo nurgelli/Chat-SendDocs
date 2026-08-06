@@ -2,5 +2,5 @@
 
 0. pip install -r requirements.txt
 
-1. Computer_1 - open terminal then run **server.py** then open another terminal on the same computer then run **client.py** => Enter your name then type message in client_1 terminal.
-2. Computer_2 - open terminal in another computer then run only **client.py** => Enter your name then type message in client_2 terminal.
+1. Computer_1 - open browser then run **server.py** => Enter your name then type message in client_1 terminal.
+2. Computer_2 - open browser in another computer then Computer_1 ipconfig ip with pord => Enter your name then type message in client_2 browser.
